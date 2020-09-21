@@ -14,6 +14,7 @@
 		BAC4FD202518936A00EA41DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAC4FD1F2518936A00EA41DF /* Assets.xcassets */; };
 		BAC4FD232518936A00EA41DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAC4FD212518936A00EA41DF /* LaunchScreen.storyboard */; };
 		BAC4FD262518936A00EA41DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC4FD252518936A00EA41DF /* main.m */; };
+		BAC4FD2F2518940200EA41DF /* ModelUnderTest.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BAC4FD2E2518940200EA41DF /* ModelUnderTest.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		BAC4FD222518936A00EA41DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAC4FD242518936A00EA41DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAC4FD252518936A00EA41DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BAC4FD2E2518940200EA41DF /* ModelUnderTest.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ModelUnderTest.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 		BAC4FD072518936A00EA41DF = {
 			isa = PBXGroup;
 			children = (
+				BAC4FD2D2518940200EA41DF /* MLModels */,
 				BAC4FD122518936A00EA41DF /* reproduction_computeUnits */,
 				BAC4FD112518936A00EA41DF /* Products */,
 			);
@@ -74,6 +77,14 @@
 				BAC4FD252518936A00EA41DF /* main.m */,
 			);
 			path = reproduction_computeUnits;
+			sourceTree = "<group>";
+		};
+		BAC4FD2D2518940200EA41DF /* MLModels */ = {
+			isa = PBXGroup;
+			children = (
+				BAC4FD2E2518940200EA41DF /* ModelUnderTest.mlmodel */,
+			);
+			path = MLModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 				BAC4FD1B2518936A00EA41DF /* ViewController.m in Sources */,
 				BAC4FD152518936A00EA41DF /* AppDelegate.m in Sources */,
 				BAC4FD262518936A00EA41DF /* main.m in Sources */,
+				BAC4FD2F2518940200EA41DF /* ModelUnderTest.mlmodel in Sources */,
 				BAC4FD182518936A00EA41DF /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,7 +237,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -278,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
