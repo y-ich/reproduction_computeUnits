@@ -57,8 +57,10 @@
                 break;
         }
         configuration.computeUnits = units[u];
+        NSLog(@"model");
         id mlModel = [[ModelUnderTest alloc] initWithConfiguration: configuration error: &error];
 
+        NSLog(@"predict");
         id output = [mlModel predictionFromFeatures: userInputArray error: &error];
         if (error) {
             NSLog(@" error => %@ ", [error userInfo]);
